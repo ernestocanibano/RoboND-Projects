@@ -14,6 +14,15 @@
   		<param name="initial_pose_x" value="-2"/>
 		<param name="initial_pose_y" value="1.5"/>
 		<param name="initial_pose_a" value="-1.5707"/>
+
+		<!-- laser configuration-->
+		<param name="laser_model_type" value="likelihood_field"/>
+	    <param name="laser_max_beams" value="60"/>
+	    <param name="laser_max_range" value="-1.0"/>
+	    <param name="laser_min_range" value="-1.0"/>
+	    <param name="laser_z_rand" value="0.1"/>
+	    <param name="laser_z_hit" value="0.9"/>
+	    
   	</node>
 
   	<!-- Move Base -->
