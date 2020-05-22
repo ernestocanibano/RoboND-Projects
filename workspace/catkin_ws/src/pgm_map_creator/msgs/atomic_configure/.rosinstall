@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ernesto/udacity/robotics/Project3/workspace/catkin_ws/src/pgm_map_creator/msgs/devel/setup.sh
