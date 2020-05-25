@@ -15,6 +15,15 @@
 		<param name="initial_pose_y" value="1.5"/>
 		<param name="initial_pose_a" value="-1.5707"/>
 
+		<param name="min_particles" value="20"/>
+    	<param name="max_particles" value="150"/>
+
+    	<!-- Source: https://answers.ros.org/question/227811/tuning-amcls-diff-corrected-and-omni-corrected-odom-models/ -->
+		<param name="odom_alpha1" value="0.005"/>
+		<param name="odom_alpha2" value="0.005"/>
+		<param name="odom_alpha3" value="0.010"/>
+		<param name="odom_alpha4" value="0.005"/>
+
 		<!-- laser configuration-->
 		<param name="laser_model_type" value="likelihood_field"/>
 	    <param name="laser_max_beams" value="60"/>
