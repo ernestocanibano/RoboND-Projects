@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -g -Wall -std=c++11  -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/ernesto/udacity/robotics/Project3/workspace/catkin_ws/src/pgm_map_creator/msgs/gtest/gtest/src -lpthread -Wl,-rpath,/home/ernesto/udacity/robotics/Project3/workspace/catkin_ws/src/pgm_map_creator/msgs/gtest/gtest/src 
