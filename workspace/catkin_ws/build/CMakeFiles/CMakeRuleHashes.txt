@@ -7,7 +7,3 @@
 ca4d00c0904603f1951771aaeb0f5b59 /home/ernesto/udacity/robotics/Project3/workspace/catkin_ws/devel/share/roseus/ros/ball_chaser/manifest.l
 1cedd6e7202428dec13d2888f3951eea /home/ernesto/udacity/robotics/Project3/workspace/catkin_ws/devel/share/roseus/ros/ball_chaser/srv/DriveToTarget.l
 55f4eb274231112570c7e90dd77a341c CMakeFiles/clean_test_results
-a1733bb3b61848ddac12a727e6229010 pgm_map_creator/msgs/collision_map_request.pb.cc
-2045eb0c6c3cd5c5aac0954493ea3f9a pgm_map_creator/msgs/header.pb.cc
-a2a394d7898a8528720df2e844979adb pgm_map_creator/msgs/time.pb.cc
-6550926d5c83c4f6ebf314d124e8f9f8 pgm_map_creator/msgs/vector2d.pb.cc
