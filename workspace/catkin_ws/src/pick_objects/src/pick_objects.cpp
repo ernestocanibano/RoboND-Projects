@@ -2,6 +2,14 @@
 #include <move_base_msgs/MoveBaseAction.h>
 #include <actionlib/client/simple_action_client.h>
 
+const float pickup_x = 5.06;
+const float pickup_y = -1.49;
+const float pickup_o = -1.26;
+const float dropoff_x = -8.38;
+const float dropoff_y = 2.83;
+const float dropoff_o = 1.94;
+
+
 // Define a client for to send goal requests to the move_base server through a SimpleActionClient
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
@@ -24,9 +32,9 @@ int main(int argc, char** argv){
   goal.target_pose.header.stamp = ros::Time::now();
 
   // Define a pickup position and orientation for the robot to reach
-  goal.target_pose.pose.position.x = -1.44;
-  goal.target_pose.pose.position.y = -5.18;
-  goal.target_pose.pose.orientation.w = -0.14;
+  goal.target_pose.pose.position.x = pickup_x;
+  goal.target_pose.pose.position.y = pickup_y;
+  goal.target_pose.pose.orientation.w = pickup_o;
 
    // Send the goal position and orientation for the robot to reach
   ROS_INFO("Sending pickup goal");
@@ -45,9 +53,9 @@ int main(int argc, char** argv){
 
   // Define a drop off position and orientation for the robot to reach
   goal.target_pose.header.stamp = ros::Time::now();
-  goal.target_pose.pose.position.x = 2.508;
-  goal.target_pose.pose.position.y = 8.382;
-  goal.target_pose.pose.orientation.w = 0.99;
+  goal.target_pose.pose.position.x = dropoff_x;
+  goal.target_pose.pose.position.y = dropoff_y;
+  goal.target_pose.pose.orientation.w = dropoff_o;
 
    // Send the goal position and orientation for the robot to reach
   ROS_INFO("Sending drop off goal");
